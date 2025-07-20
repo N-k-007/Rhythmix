@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+# Simple conventional commit check
+grep -E '^(feat|fix|docs|style|refactor|perf|test|chore)\(.+\): .{1,}' "$1" || {
+  echo "\n⛔️ Commit message must follow Conventional Commits (e.g., feat(component): add new feature)";
+  exit 1;
+}
