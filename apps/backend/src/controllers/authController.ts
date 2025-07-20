@@ -9,9 +9,6 @@ export const register = async (req: Request, res: Response) => {
   const username = sanitizeInput(req.body.username);
   const password = req.body.password;
 
-  console.log('email: ', email);
-  console.log('username: ', username);
-
   if (!email || !username || !password) {
     return res.status(400).json({ message: 'Missing required fields' });
   }
