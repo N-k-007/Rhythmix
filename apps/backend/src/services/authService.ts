@@ -29,4 +29,9 @@ export class AuthService {
     const { password: _password, ...userWithoutPassword } = user;
     return userWithoutPassword;
   }
+
+  getAllUsers(): Omit<User, 'password'>[] {
+    // Remove password from each user before returning
+    return users.map(({ password, ...userWithoutPassword }) => userWithoutPassword);
+  }
 }
