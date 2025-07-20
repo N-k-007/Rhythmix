@@ -1,0 +1,60 @@
+# Node modules
+node_modules/
+apps/*/node_modules/
+packages/*/node_modules/
+
+# Build output
+dist/
+build/
+apps/*/dist/
+apps/*/build/
+packages/*/dist/
+packages/*/build/
+apps/*/.next/
+apps/*/out/
+apps/*/.expo/
+apps/*/android/app/build/
+apps/*/ios/build/
+
+# Turborepo cache
+.turbo/
+apps/*/.turbo/
+packages/*/.turbo/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# Test coverage
+coverage/
+*.lcov
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# TypeScript build info
+*.tsbuildinfo
+
+# Misc
+*.swp
+*.swo
+*.tmp
+
+# Ignore local test HTML files (optional)
+apps/*/src/tests/*.html

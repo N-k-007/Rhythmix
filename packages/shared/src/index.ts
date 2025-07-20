@@ -1,1 +1,1 @@
-// Placeholder for shared utilities, types, and exports. 
+// Placeholder for shared utilities, types, and exports.

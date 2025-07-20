@@ -7,8 +7,10 @@
     "**/dist": true,
     "**/.next": true
   },
-"typescript.tsdk": "node_modules/typescript/lib",
-"[json]": {
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
-}
+  },
+  "editor.autoClosingOvertype": "never",
+  "editor.overtypeCursorStyle": "line"
 }
